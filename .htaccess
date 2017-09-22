@@ -1,0 +1,2 @@
+# hide all dot files/dirs with 404
+RewriteRule (^\.|/\.) - [R=404]

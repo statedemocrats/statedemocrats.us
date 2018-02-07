@@ -1,0 +1,137 @@
+#about {
+  margin-left: 2em;
+}
+#map {
+  float: left;
+  border: 1px solid #ddd;
+  margin: 2em;
+  width: 60%;
+  min-width: 260px;
+  height: 500px;
+}
+#details {
+  float: left;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em;
+  min-width: 50px;
+  max-width: 30%;
+}
+#find {
+  margin-left: 2em;
+}
+#precinct, #iprecinct {
+  font-size: 14px;
+  padding: 4px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.info {
+  padding: 8px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+nav {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  color: #888;
+  display: block;
+  margin: 8px 22px 8px 22px;
+  overflow: hidden;
+  width: 90%; 
+}
+ 
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+ 
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+       
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; 
+}
+       
+nav > ul > li > a > .caret {
+  border-top: 4px solid #aaa;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+   
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear; 
+}
+ 
+nav > ul > li > a {
+  color: #aaa;
+  display: block;
+  line-height: 56px;
+  padding: 0 24px;
+  text-decoration: none;
+}
+ 
+nav > ul > li:hover {
+  background-color: rgb( 40, 44, 47 );
+}
+ 
+nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+ 
+nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+
+#races table caption {
+  text-align: left;
+  font-weight: bold;
+}
+
+#races table {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#races table th, #races table td {
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+}
+
+.party {
+  text-transform: capitalize;
+}
+.democratic {
+  color: blue;
+}
+.republican {
+  color: red;
+}
+.libertarian {
+  color: #444;
+}
+.independent {
+  color: green;
+}
+.winner {
+  background-color: #f7f28f;
+}

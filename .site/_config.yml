@@ -28,6 +28,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+header_pages:
+  - about.md
+
+google_analytics: UA-2876801-4
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

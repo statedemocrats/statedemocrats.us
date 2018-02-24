@@ -4,3 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+Welcome to the [State Democrats lab](/about/)!
+
+Check out our [Digital Security](/security/) resources.

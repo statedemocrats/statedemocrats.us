@@ -1,13 +1,21 @@
 all: build
 
-build:
+install:
 	cd .site && bundle install && cd ..
+
+build:
 	jekyll build --destination www --source .site
 
+watch:
+	jekyll build --destination www --source .site --watch
+
 serve:
-	jekyll serve --incremental
+	cd .site && make serve
+
+build-prod:
+	JEKYLL_ENV=production jekyll build --destination www --source .site
 
 deploy:
-	ssh statedemocrats.us "bash --login -c 'cd /data/statedemocrats.us && git pull && make build'"
+	ssh statedemocrats.us "bash --login -c 'cd /data/statedemocrats.us && git pull && make install build-prod'"
 
 .PHONY: build all serve

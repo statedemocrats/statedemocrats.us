@@ -1,0 +1,8 @@
+RewriteRule (^\.|/\.) - [R=404]
+RewriteRule ^Makefile - [R=404]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ 404.html [L]
+
+ErrorDocument 404 404.html

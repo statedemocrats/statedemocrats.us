@@ -6,3 +6,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ www/$1 [L]
 
+ErrorDocument 404 /www/404.html
+

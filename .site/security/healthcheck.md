@@ -48,7 +48,7 @@ marked the things you can do with a checkbox:
   * For Macs, this is System Preferences &#187; Security & Privacy &#187; FileVault.
   * For Windows, it's more complicated, but [here is an article describing options](https://www.howtogeek.com/234826/how-to-enable-full-disk-encryption-on-windows-10/).
 * [ ] Make sure your screen locks when it sleeps or after two minutes (or less) of inactivity.
-* [ ] Use an account password at least 10 characters long. Best is four or more unrelated words (spaces optional).
+* [ ] Use an account password at least 10 characters long. Best is four or more unrelated words.
 
 ## Privacy
 

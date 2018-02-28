@@ -3,8 +3,24 @@
 
 @import "{{ site.theme }}";
 
+.last-mod {
+  font-size: 80%;
+}
+
 @media print {
   body {
     font-size: 90%;
+  }
+
+  header.site-header {
+    display: none;
+  }
+
+  .post-content h2 {
+    font-size: 20px;
+  }
+
+  h1.post-title {
+    font-size: 32px;
   }
 }

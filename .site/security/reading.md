@@ -5,6 +5,10 @@ layout: page
 
 [Digital Security is everyone's business](https://sec.eff.org/articles/why-your-audience-should-care) in the Internet Age. Here's a list of readings we find helpful.
 
+This list evolves. Read the [change history](https://github.com/statedemocrats/statedemocrats.us/commits/master/.site/security/reading.md).
+
+Ready to take action? Check out the [healthcheck list](healthcheck.html).
+
 ## [Security Planner](https://securityplanner.org/)
 
 A walk-through guide from the Citizen Lab. Great resource for folks just getting started with thinking
@@ -17,6 +21,10 @@ A must read for campaigns, candidates and anyone concerned with protecting their
 ## [Tech Solidarity Security Guide](https://techsolidarity.org/resources/basic_security.htm)
 
 A quick Do and Don't list recommended by EFF. You might see a lot of overlap with our own [Healthcheck](healthcheck.html).
+
+## [Campaign Cybersecurity Playbook](https://www.belfercenter.org/CyberPlaybook)
+
+Written by the Belfer Center at Harvard, an excellent guide to actionable security practices for campaigns.
 
 ## [Assessing Vendor Data Security](https://www.eff.org/deeplinks/2018/01/how-assess-vendors-data-security)
 

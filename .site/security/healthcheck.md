@@ -62,5 +62,13 @@ marked the things you can do with a checkbox:
 * [ ] Getting a fraudelent email does *not* mean an account has been hacked.
 * [ ] MFA/2FA and password manager are really important preventions.
 * [ ] Be alert. If an email looks a little "off" pick up the phone and verify the sender. Do *not* reply to the email or click on any links. Verify it out of band (verbally or text message) to trust the sender.
+* [ ] Follow your [incident response plan](https://www.belfercenter.org/CyberPlaybook#step4). Don't have any? Time to write one.
 * [ ] If you use Gmail, you can report an email as Phishing using the same menu you use to Reply or Forward.
+
+## Incident Response Plan
+
+* Bad things happen. It's not usually your fault.
+* [ ] [Plan ahead](https://www.belfercenter.org/CyberPlaybook#step4) for how you'll respond when bad things happen.
+* [ ] Document your plan.
+* [ ] Practice your plan. See for example [Cofense (formerly PhishMe)](https://cofense.com/) and [KnowBe4](https://www.knowbe4.com/).
 

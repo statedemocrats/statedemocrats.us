@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@media print {
+  body {
+    font-size: 90%;
+  }
+}

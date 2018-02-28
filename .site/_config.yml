@@ -27,6 +27,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
 
 header_pages:
   - about.md

@@ -41,7 +41,7 @@ marked the things you can do with a checkbox:
 * [ ] Install a 2FA TOTP app: [Duo](https://duo.com/), [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en), or [Authy](https://www.authy.com/)
 * [ ] Set up a customer account passcode with your mobile phone company. This helps them verify you when you speak with them or log in to your account online.
 
-## Laptops
+## Computers
 
 * [ ] Run all software updates.
 * [ ] Turn on full-disk encryption.

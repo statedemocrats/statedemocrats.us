@@ -54,7 +54,7 @@ marked the things you can do with a checkbox:
 
 * [ ] Do not send sensitive information via unencrypted email.
 * [ ] [Always use HTTPS](https://en.wikipedia.org/wiki/HTTPS_Everywhere).
-* [ ] Use a [end-to-end encrypted service](https://en.wikipedia.org/wiki/End-to-end_encryption) to send sensitive information. Examples include [Keybase](https://keybase.io/), [WhatsApp](https://www.whatsapp.com/) and [Signal](https://signal.org/).
+* [ ] Use an [end-to-end encrypted service](https://en.wikipedia.org/wiki/End-to-end_encryption) to send sensitive information. Examples include [Keybase](https://keybase.io/), [WhatsApp](https://www.whatsapp.com/) and [Signal](https://signal.org/).
 * [ ] Treat constituent data as if it were your own. Shred VAN paper printouts after data entry. Store paper in a safe place.
 
 ## [Phishing](https://en.wikipedia.org/wiki/Phishing)

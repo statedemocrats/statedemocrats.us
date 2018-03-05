@@ -8,3 +8,9 @@ layout: home
 Welcome to the [State Democrats lab](/about/)!
 
 Check out our [Digital Security](/security/) resources.
+
+[![xkcd 2016 election map](https://imgs.xkcd.com/comics/2016_election_map.png){:class='img-responsive'}](https://xkcd.com/1939/)
+
+## Partners
+
+[Geolocation services provided by Texas A&M University GeoServices](https://geoservices.tamu.edu){:.partners}

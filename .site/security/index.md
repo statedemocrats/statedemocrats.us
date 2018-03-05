@@ -1,6 +1,7 @@
 ---
 title: Digital Security
 layout: page
+permalink: /security/
 ---
 
 Digital Security is everyone's job. Like getting a flu shot, protecting your

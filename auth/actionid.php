@@ -25,7 +25,9 @@ function doIncludes() {
 // setup
 doIncludes();
 if (!file_exists(FILESTORE_PATH)) {
-    mkdir(FILESTORE_PATH);
+    if (!mkdir(FILESTORE_PATH)) {
+        error_log("Failed to mkdir " . FILESTORE_PATH);
+    }
 }
 
 
@@ -140,7 +142,7 @@ else {
     // start
     $auth_request = $oid_consumer->begin(ACTION_ID_ENDPOINT);
     if (!$auth_request) {
-        print "You must log in with an <a href='http://accounts.ngpvan.com/'>ActionID</a>";
+        print "You must log in with an <a href='https://accounts.ngpvan.com/'>ActionID</a>";
         exit(0);
     }
 

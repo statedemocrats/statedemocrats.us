@@ -13,9 +13,9 @@ Check out our [Digital Security](/security/) resources.
 
 ## Credits
 
-[Geolocation services provided by Texas A&M University GeoServices](https://geoservices.tamu.edu)
+[Geocoding services provided by Texas A&M University GeoServices](https://geoservices.tamu.edu)
 
-[Geolocation services provided by census.gov](https://geocoding.geo.census.gov){:partners}
+Geocoding via [census.gov](https://geocoding.geo.census.gov)
 
 Maps via [mapbox](https://mapbox.com/) and [Leaflet](http://leafletjs.com/)
 

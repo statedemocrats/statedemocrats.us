@@ -1,6 +1,7 @@
 # hide all dot files/dirs with 404
 RewriteRule (^\.|/\.) - [R=404]
 RewriteRule Makefile - [R=404]
+RewriteRule ^bin/ - [R=404]
 
 # home page in www
 RewriteRule ^$ www/index.html [L]

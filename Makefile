@@ -18,4 +18,7 @@ build-prod:
 deploy:
 	ssh statedemocrats.us "bash --login -c 'cd /data/statedemocrats.us && git pull && make install build-prod'"
 
+statedirs:
+	ruby bin/mk-state-dirs
+
 .PHONY: build all serve

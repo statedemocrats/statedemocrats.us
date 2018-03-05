@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+states = JSON.parse(File.read('states.json'))
+
+states.each do |abbr, name|
+  dirname = name.downcase.gsub(/\W/, '-')
+  system("mkdir #{dirname}")
+  File.symlink(dirname, abbr.downcase)
+end

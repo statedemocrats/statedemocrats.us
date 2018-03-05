@@ -180,7 +180,12 @@ class Apache_AuthTkt {
 
         // Deconstruct
         $matches = array();
-        if (!preg_match('/^(.{32})(.{8})(.+?)!(.*)$/', $raw, $matches)) {
+        $digest_type = $this->get_digest_type();
+        $pattern = '/^(.{32})(.{8})(.+?)!(.*)$/';
+        if ($digest_type == 'sha1') {
+            $pattern = '/^(.{40})(.{8})(.+?)!(.*)$/';
+        }
+        if (!preg_match($pattern, $raw, $matches)) {
             $this->set_err("No regex match for '$raw'");
             return null;
         }
@@ -233,11 +238,12 @@ class Apache_AuthTkt {
             $ipts .= pack("C1", $tsp);
         }
         $raw = $ipts . $this->get_secret() . $uid . "\0" . $tokens . "\0" . $data;
-        if ($this->digest_type == 'md5') {
+        $digest_type = $this->get_digest_type();
+        if ($digest_type == 'md5') {
             $digest0 = md5($raw);
             $digest  = md5($digest0 . $this->get_secret());
         }
-        elseif ($this->digest_type == 'sha1') {
+        elseif ($digest_type == 'sha1') {
             $digest0 = sha1($raw);
             $digest  = sha1($digest0 . $this->get_secret());
         }

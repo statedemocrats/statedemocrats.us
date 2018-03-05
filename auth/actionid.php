@@ -69,10 +69,14 @@ function set_auth_tkt($sreg) {
         )
     );
     $tkt = $auth_tkt->create_ticket(array(
-            'user' => @$sreg['nickname'],
+            'user' => substr(sha1($sreg['fullname']), 0, 12),
             'data' => json_encode($payload),
         )
     );
+    if (!$auth_tkt->validate_ticket($tkt)) {
+        print "Error setting auth tkt: " . $auth_tkt->get_err();
+        exit(0);
+    }
     setcookie('statedemocrats_auth', $tkt);
 }
 

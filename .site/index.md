@@ -17,7 +17,7 @@ Check out our [Digital Security](/security/) resources.
 
 Geocoding via [census.gov](https://geocoding.geo.census.gov)
 
-Maps via [mapbox](https://mapbox.com/) and [Leaflet](http://leafletjs.com/)
+Maps via [Mapbox](https://mapbox.com/), [OpenStreetMap](https://openstreetmap.org/) and [Leaflet](http://leafletjs.com/)
 
 Shapefiles via [election-geodata](https://github.com/nvkelso/election-geodata)
 

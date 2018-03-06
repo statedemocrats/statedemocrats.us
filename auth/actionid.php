@@ -8,6 +8,9 @@ set_include_path(get_include_path() . ':' . 'lib');
 // constants
 define('ACTION_ID_ENDPOINT', 'https://accounts.ngpvan.com/Home/Xrds');
 define('FILESTORE_PATH', '/tmp/action-id-filestore');
+define('DAYS_TTL', 7);
+define('COOKIE_NAME', 'statedemocrats_auth');
+define('DOMAIN_NAME', '.statedemocrats.us');
 
 
 /**
@@ -17,7 +20,6 @@ function doIncludes() {
     require_once "Auth/OpenID/Consumer.php";
     require_once "Auth/OpenID/FileStore.php";
     require_once "Auth/OpenID/SReg.php";
-
     require_once 'Apache_AuthTkt.php';
 }
 
@@ -78,7 +80,7 @@ function set_auth_tkt($sreg) {
         print "Error setting auth tkt: " . $auth_tkt->get_err();
         exit(0);
     }
-    setcookie('statedemocrats_auth', $tkt);
+    setcookie(COOKIE_NAME, $tkt, time()+(86400*DAYS_TTL), '/', DOMAIN_NAME, true);
 }
 
 

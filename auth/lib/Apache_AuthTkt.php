@@ -23,7 +23,7 @@
 class Apache_AuthTkt {
 
     private $secret;
-    private $digest_type = 'sha1';
+    private $digest_type = 'md5';
     private $conf_file   = '/etc/auth_tkt.conf';
     private $err = array();
     private $tkt = '';
@@ -36,6 +36,12 @@ class Apache_AuthTkt {
         'base64'        => true,
     );
     private $encrypt_data = false;
+    private $digest_lengths = array(
+        'md5' => '32',
+        'sha1' => '40',
+        'sha256' => '64',
+        'sha512' => '128',
+    );
 
     // encryption options
     public static $CIPHER = 'aes-256-cbc';
@@ -77,7 +83,7 @@ class Apache_AuthTkt {
 
         }
         if (isset($config['digest_type'])) {
-            $this->digest_type = $config['digest_type'];
+            $this->digest_type = strtolower($config['digest_type']);
         }
         if (isset($config['encrypt_data'])) {
             $this->encrypt_data = $config['encrypt_data'];
@@ -181,10 +187,8 @@ class Apache_AuthTkt {
         // Deconstruct
         $matches = array();
         $digest_type = $this->get_digest_type();
-        $pattern = '/^(.{32})(.{8})(.+?)!(.*)$/';
-        if ($digest_type == 'sha1') {
-            $pattern = '/^(.{40})(.{8})(.+?)!(.*)$/';
-        }
+        $digest_length = $this->digest_lengths[$digest_type];
+        $pattern = "/^(.{${digest_length}})(.{8})(.+?)!(.*)\$/";
         if (!preg_match($pattern, $raw, $matches)) {
             $this->set_err("No regex match for '$raw'");
             return null;
@@ -239,14 +243,8 @@ class Apache_AuthTkt {
         }
         $raw = $ipts . $this->get_secret() . $uid . "\0" . $tokens . "\0" . $data;
         $digest_type = $this->get_digest_type();
-        if ($digest_type == 'md5') {
-            $digest0 = md5($raw);
-            $digest  = md5($digest0 . $this->get_secret());
-        }
-        elseif ($digest_type == 'sha1') {
-            $digest0 = sha1($raw);
-            $digest  = sha1($digest0 . $this->get_secret());
-        }
+        $digest0 = hash($digest_type, $raw);
+        $digest  = hash($digest_type, $digest0 . $this->get_secret());
         return $digest;
     }
 
@@ -320,7 +318,7 @@ class Apache_AuthTkt {
         if (!isset($this->digest_type)) {
             die("digest_type not set");
         }
-        elseif ($this->digest_type == "md5" || $this->digest_type == "sha1") {
+        elseif (array_key_exists($this->digest_type, $this->digest_lengths)) {
             return $this->digest_type;
         }
         else {

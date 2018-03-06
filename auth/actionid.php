@@ -68,6 +68,7 @@ function set_auth_tkt($sreg) {
     $auth_tkt = new Apache_AuthTkt(array(
             'secret' => getenv('AUTH_TKT_SECRET'),
             'encrypt_data' => true,
+            'digest_type' => 'sha256',
         )
     );
     $tkt = $auth_tkt->create_ticket(array(

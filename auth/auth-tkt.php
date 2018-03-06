@@ -6,7 +6,6 @@ require_once 'Apache_AuthTkt.php';
 
 $auth_tkt = new Apache_AuthTkt(array(
         'conf' => getenv('AUTH_TKT_SECRET'),
-        'encrypt_data' => true,
         'digest_type' => 'sha256',
     )
 );
@@ -25,6 +24,5 @@ if (!$valid_tkt) {
 }
 else {
     print_r($valid_tkt);
-    print_r(json_decode($valid_tkt['data']));
 }
 print '</pre>';

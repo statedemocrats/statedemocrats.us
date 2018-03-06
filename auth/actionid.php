@@ -147,7 +147,7 @@ else {
         exit(0);
     }
 
-    $sreg_request = Auth_OpenID_SRegRequest::build(array('nickname'), array('fullname', 'email'));
+    $sreg_request = Auth_OpenID_SRegRequest::build(array('nickname'), array('fullname'));
     if ($sreg_request) {
         $auth_request->addExtension($sreg_request);
     }

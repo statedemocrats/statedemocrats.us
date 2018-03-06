@@ -67,13 +67,11 @@ function set_auth_tkt($sreg) {
     $payload = $sreg;
     $auth_tkt = new Apache_AuthTkt(array(
             'conf' => getenv('AUTH_TKT_SECRET'),
-            'encrypt_data' => true,
             'digest_type' => 'sha256',
         )
     );
     $tkt = $auth_tkt->create_ticket(array(
-            'user' => substr(sha1($sreg['fullname']), 0, 12),
-            'data' => json_encode($payload),
+            'user' => strtolower(preg_replace('/\W/', '-', $sreg['fullname'])),
         )
     );
     if (!$auth_tkt->validate_ticket($tkt)) {

@@ -5,13 +5,18 @@ set_include_path(get_include_path() . ':' . 'lib');
 require_once 'Apache_AuthTkt.php';
 
 $auth_tkt = new Apache_AuthTkt(array(
-        'secret' => getenv('AUTH_TKT_SECRET'),
+        'conf' => getenv('AUTH_TKT_SECRET'),
         'encrypt_data' => true,
+        'digest_type' => 'sha256',
     )
 );
 $tkt = $_COOKIE['statedemocrats_auth'];
-$ip = '0.0.0.0';
-$valid_tkt = $auth_tkt->validate_ticket($tkt, $ip);
+if (!$tkt) {
+    print "Missing auth tkt\n";
+    exit(0);
+}
+
+$valid_tkt = $auth_tkt->validate_ticket($tkt);
 
 print '<pre>';
 if (!$valid_tkt) {

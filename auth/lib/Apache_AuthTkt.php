@@ -141,7 +141,6 @@ class Apache_AuthTkt {
         if ($expected_digest == $info['digest']) {
             return $info;
         }
-        error_log(var_export($info, true));
         $this->set_err("digest mismatch: $expected_digest " . $info['digest']);
         return null;
     }
@@ -188,7 +187,7 @@ class Apache_AuthTkt {
         $matches = array();
         $digest_type = $this->get_digest_type();
         $digest_length = $this->digest_lengths[$digest_type];
-        $pattern = "/^(.{${digest_length}})(.{8})(.+?)!(.*)\$/";
+        $pattern = '/^(.{' . $digest_length . '})(.{8})(.+?)!(.*)$/';
         if (!preg_match($pattern, $raw, $matches)) {
             $this->set_err("No regex match for '$raw'");
             return null;

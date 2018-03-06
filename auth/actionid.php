@@ -66,7 +66,7 @@ function get_this_url() {
 function set_auth_tkt($sreg) {
     $payload = $sreg;
     $auth_tkt = new Apache_AuthTkt(array(
-            'secret' => getenv('AUTH_TKT_SECRET'),
+            'conf' => getenv('AUTH_TKT_SECRET'),
             'encrypt_data' => true,
             'digest_type' => 'sha256',
         )

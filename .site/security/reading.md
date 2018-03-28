@@ -22,6 +22,10 @@ A must read for campaigns, candidates and anyone concerned with protecting their
 
 A quick Do and Don't list recommended by EFF. You might see a lot of overlap with our own [Healthcheck](healthcheck.html).
 
+## [The DNC Security Guide](https://securetheblueteam.org/)
+
+The DNC has a site devoted to security.
+
 ## [Campaign Cybersecurity Playbook](https://www.belfercenter.org/CyberPlaybook)
 
 Written by the Belfer Center at Harvard, an excellent guide to actionable security practices for campaigns.

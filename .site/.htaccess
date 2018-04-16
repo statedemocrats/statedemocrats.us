@@ -1,8 +1,12 @@
 RewriteRule (^\.|/\.) - [R=404]
 RewriteRule ^Makefile - [R=404]
 
+# if original request had www/ in the URL, redirect it w/o
+RewriteCond %{THE_REQUEST} /www/
+RewriteRule (.*) https://statedemocrats.us/$1 [L,R=301]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ 404.html [L]
+RewriteRule ^(.*)$ 404.html [L,R=404]
 
 ErrorDocument 404 404.html

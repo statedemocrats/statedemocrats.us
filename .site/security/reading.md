@@ -18,6 +18,10 @@ about digital security.
 
 A must read for campaigns, candidates and anyone concerned with protecting their digital life.
 
+## [The OpenNews Field Guide to Security Training in the Newsroom](https://the-field-guide-to-security-training-in-the-newsroom.readthedocs.io/en/latest/)
+
+The OpenNews community produced this terrific resource for helping yourself and others learn about digital security.
+
 ## [Tech Solidarity Security Guide](https://techsolidarity.org/resources/basic_security.htm)
 
 A quick Do and Don't list recommended by EFF. You might see a lot of overlap with our own [Healthcheck](healthcheck.html).

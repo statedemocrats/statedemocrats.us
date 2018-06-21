@@ -53,3 +53,5 @@ Ready to help teach others about security? This amazing resource from EFF is gre
 ## [Google Drive File Sharing Help](https://support.google.com/a/answer/60781)
 
 Do you use G Suite or Google Drive? This is the official support article for managing sharing permissions.
+
+## [Microsoft configuration for campaigns and nonprofits](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)

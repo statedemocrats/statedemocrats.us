@@ -55,3 +55,7 @@ Ready to help teach others about security? This amazing resource from EFF is gre
 Do you use G Suite or Google Drive? This is the official support article for managing sharing permissions.
 
 ## [Microsoft configuration for campaigns and nonprofits](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
+
+## [EFF Self-Defense](https://ssd.eff.org/en/module/your-security-plan)
+
+Not digital security per-se, but a great plain-language guide to thinking about threat modeling.

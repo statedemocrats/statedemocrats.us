@@ -25,7 +25,7 @@ marked the things you can do with a checkbox:
 * Something you know, something you have, something you are. Example: ATM card (have) + PIN (know).
 * Biometric = something you are. Be wary of this (fingerprints, facial recognition).
 * "Something you have" can vary. In order of good, better, best:
-  * [SMS](https://en.wikipedia.org/wiki/SMS) one-time password (OTP) sent to your phone (2-step)
+  * [SMS](https://en.wikipedia.org/wiki/SMS) one-time password (OTP) sent to your phone (2-step) ([SMS is vulnerable](https://us.norton.com/internetsecurity-mobile-sim-swap-fraud.html))
   * [TOTP](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm) (time-based one-time password) app (2-factor)
   * Paper list of one-time recovery codes. (2-factor)
   * [U2F](https://en.wikipedia.org/wiki/Universal_2nd_Factor) Universal 2nd Factor, hardware security key (2-factor)
@@ -38,7 +38,7 @@ marked the things you can do with a checkbox:
 * [ ] Run all software updates.
 * [ ] Use a PIN of at least 6 characters to secure your phone. If your phone offers biometric (fingerprint) unlock, consider using a longer complex passcode (8+ characters) and the biometric for convenience.
 * [ ] Autolock the screen in 2 minutes (or less) of inactivity.
-* [ ] Install a 2FA TOTP app: [Duo](https://duo.com/), [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en), or [Authy](https://www.authy.com/)
+* [ ] Install a 2FA TOTP app like [Duo](https://duo.com/) or [Authy](https://www.authy.com/). 1Password also has [integrated 2FA](https://support.1password.com/one-time-passwords/).
 * [ ] Set up a customer account passcode with your mobile phone company. This helps them verify you when you speak with them or log in to your account online.
 
 ## Computers
@@ -68,6 +68,7 @@ marked the things you can do with a checkbox:
 ## Incident Response Plan
 
 * Bad things happen. It's not usually your fault.
+* Have any of your accounts been compromised? [You can check](https://haveibeenpwned.com/).
 * [ ] [Plan ahead](https://www.belfercenter.org/CyberPlaybook#step4) for how you'll respond when bad things happen.
 * [ ] Document your plan.
 * [ ] Practice your plan. See for example [Cofense (formerly PhishMe)](https://cofense.com/) and [KnowBe4](https://www.knowbe4.com/).

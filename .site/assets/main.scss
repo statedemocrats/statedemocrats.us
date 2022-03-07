@@ -15,6 +15,11 @@
   font-size: 90%;
 }
 
+a.active {
+  font-weight: bold;
+  color: #444;
+}
+
 @media print {
   body {
     font-size: 90%;

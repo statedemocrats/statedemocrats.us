@@ -26,7 +26,7 @@ The OpenNews community produced this terrific resource for helping yourself and 
 
 A quick Do and Don't list recommended by EFF. You might see a lot of overlap with our own [Healthcheck](healthcheck.html).
 
-## [The DNS Security Checklist](https://democrats.org/wp-content/uploads/2022/03/Device-and-Account-Security-Checklist.pdf)
+## [The DNC Security Checklist](https://democrats.org/wp-content/uploads/2022/03/Device-and-Account-Security-Checklist.pdf)
 
 Note this seems to be updated regularly and the URL may change. Please [open a ticket](https://github.com/statedemocrats/statedemocrats.us/issues/new) if you notice the link is broken.
 
